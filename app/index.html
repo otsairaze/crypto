@@ -7,15 +7,47 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/style.min.css" />
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.min.js" defer></script>
     <title>Crypto</title>
   </head>
   <body>
+    <div id="over" class="overlay">
+      <div class="popup">
+        <h3 class="popup__title">
+          Have you <span>decided</span> on your study program?
+        </h3>
+        <div class="popup__block">
+          <span class="popup__name">EXPERT</span>
+          <div class="poppup__input-inner">
+            <div>
+              <input class="popup__input" placeholder="Name" type="text" />
+              <input class="popup__input" placeholder="Surname" type="text" />
+              <input class="popup__input" placeholder="E-mail" type="text" />
+              <input class="popup__input" placeholder="Number" type="text" />
+            </div>
+            <img src="./img/popup/payment.png" alt="" class="popup__img" />
+          </div>
+
+          <div>
+            <p class="popup__price">Total to Pay:</p>
+            <button class="popup__btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <section class="main">
         <div class="main__wrapper">
+          <!-- <div class="main__bg-content">
+            <img class="main__bg-lite" src="./img/bg/litecoin.png" alt="" />
+            <img class="main__bg-bit" src="./img/bg/bitcoin.png" alt="" />
+          </div> -->
           <div class="main__info">
             <h1>Vitalii-Trade</h1>
             <p class="main__subtitle">
@@ -32,38 +64,62 @@
             </div>
           </div>
           <div class="main__img">
-            <img class="img-laptop" src="./img/mainLaptop.png" alt="" />
-            <img class="main__ellipse-1" src="./img/Ellipse 1.png" alt="" />
+            <img class="img-laptop" src="./img/main/mainLaptop.png" alt="" />
+            <img
+              class="main__ellipse-1"
+              src="./img/main/Ellipse 1.png"
+              alt=""
+            />
           </div>
         </div>
         <div class="main__list">
           <div class="main__card">
-            <img src="./img/consult.png" alt="" />
+            <img src="./img/main/consult.png" alt="" />
             <p>Online consultation</p>
           </div>
           <div class="main__card">
-            <img src="./img//online.png" alt="" />
+            <img src="./img/main/online.png" alt="" />
             <p>Format (Online)</p>
           </div>
           <div class="main__card">
-            <img src="./img/support.png" alt="" />
+            <img src="./img/main/support.png" alt="" />
             <p>Student support</p>
           </div>
           <div class="main__card">
-            <img src="./img/duration.png" alt="" />
+            <img src="./img/main/duration.png" alt="" />
             <p>Duration 4-12 weeks</p>
           </div>
         </div>
       </section>
       <section class="step">
         <div class="step__wrapper">
-          <h2>THE PATH OF YOUR DEVELOPMENT</h2>
+          <div class="step__bg-content">
+            s
+            <img class="step__bg-binance" src="./img/bg/binance.png" alt="" />
+            <img class="step__bg-s" src="./img/bg/s.png" alt="" />
+            <img class="step__bg-doge" src="./img/bg/doge.png" alt="" />
+            <img class="step__bg-usdt" src="./img/bg/usdc.png" alt="" />
+            <img
+              src="./img/bg/step__elipse-1.png"
+              alt=""
+              class="step__bg-ellipse-1"
+            />
+            <img
+              src="./img/bg/step__elipse-2.png"
+              alt=""
+              class="step__bg-ellipse-2"
+            />
+          </div>
 
-          <span class="step__circle circle--1">1</span>
-          <span class="step__circle circle--2">2</span>
-          <span class="step__circle circle--3">3</span>
-          <span class="step__circle circle--4">4</span>
-          <span class="step__circle circle--5">5 </span>
+          <h2>THE PATH OF YOUR DEVELOPMENT</h2>
+          <div class="step__circle-block">
+            <span class="step__circle circle--1">1</span>
+            <span class="step__circle circle--2">2</span>
+            <span class="step__circle circle--3">3</span>
+            <span class="step__circle circle--4">4</span>
+            <span class="step__circle circle--5">5 </span>
+          </div>
+
           <div class="step__line"></div>
           <div class="step__block">
             <div class="step__card card--1">
@@ -121,8 +177,162 @@
         </div>
       </section>
       <section class="program">
-        <div class="program__wrapper"></div>
+        <div class="program__wrapper">
+          <h3 class="program__title">CHOOSE YOUR STUDY PROGRAM</h3>
+          <div class="program__inner">
+            <div class="program__card prog__card--1">
+              <div class="program__card-price">
+                <span>200$</span>
+              </div>
+              <div>
+                <h3>EXPERT</h3>
+                <p class="program__subtitle">12 modules 4 weeks</p>
+                <p class="program__desc">
+                  Upon completion of the program, the student will acquire the
+                  following skills:<br />
+                  1. Creating your own trading strategy, based on the experience
+                  of mentors for 3 years.<br />
+                  2. Development of an approach to trading as an intraday trader
+                  (trading in the middle of the day) and in positions that
+                  require less time for analytics, which helps to increase
+                  trading efficiency.<br />
+                  3. Course pdf + mentoring
+                </p>
+              </div>
+              <div class="button__inner">
+                <p>TRAINING PROGRAM</p>
+                <button id="btn">SUBMIT YOUR APLICATION</button>
+              </div>
+            </div>
+            <div class="program__card prog__card--2">
+              <div class="program__card-price">
+                <span>500$</span>
+              </div>
+              <div>
+                <h3>PRO</h3>
+                <p class="program__subtitle">19 modules 8 weeks</p>
+                <p class="program__desc">
+                  Upon completion of the program, the student will acquire the
+                  following skills and experience:   1. In-depth experience from
+                  mentors in trading, including weekly sessions of chart
+                  analysis, testing strategies on historical data (backtest), as
+                  well as creating and managing a spot portfolio and analyzing
+                  new projects. 2. The course is focused on developing
+                  professional competence and the perception of trade not only
+                  as a temporary hobby, but also as a future profession. 3.
+                  Course pdf + mentoring
+                </p>
+              </div>
+
+              <div class="button__inner">
+                <p>TRAINING PROGRAM</p>
+                <button id="btn">SUBMIT YOUR APLICATION</button>
+              </div>
+            </div>
+            <div class="program__card prog__card--3">
+              <div class="program__card-price">
+                <span>800$</span>
+              </div>
+              <div>
+                <h3>INDIVIDUAL</h3>
+                <p class="program__subtitle">
+                  19 training modules Duration 8 weeks Additional 4 weeks of
+                  support from a mentor
+                </p>
+                <p class="program__desc">
+                  Program results include:<br />
+                  1. A comprehensive set of knowledge and tools necessary for
+                  successful trading<br />
+                  2. Acquiring skills and competencies to become a trader<br />
+                  3. Course pdf + mentoring
+                </p>
+              </div>
+              <div class="button__inner">
+                <p>TRAINING PROGRAM</p>
+                <button id="btn">SUBMIT YOUR APLICATION</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <div class="reviews__bg-content">
+            <img
+              class="reviews__bg-ellipse-1"
+              src="./img/reviews/el-1.png"
+              alt=""
+            />
+          </div>
+          <h3 class="reviews__title">CUSTOMER REVIEWS</h3>
+          <div class="reviews__inner">
+            <h3 class="reviews__name">Monica</h3>
+            <div class="reviews__card">
+              <img src="./img/reviews/1.png" alt="" />
+              <div>
+                I am completely satisfied with the training! All aspects of the
+                program are at a high level: the quality of the information
+                provided, support from mentors and curators, always ready to
+                help. Every question received a comprehensive answer, all
+                homework was checked and discussed. The streams were fun and
+                very informative. I I'm glad and grateful for the opportunity to
+                be part of such a community and to learn and work in such a
+                wonderful atmosphere. A huge thank you to everyone who took part
+                in this process!
+              </div>
+            </div>
+          </div>
+          <div class="reviews__inner">
+            <h3 class="reviews__name">Lucas</h3>
+            <div class="reviews__card">
+              <img src="./img/reviews/2.png" alt="" />
+              <div>
+                I am completely satisfied with the training! All aspects of the
+                program are at a high level: the quality of the information
+                provided, support from mentors and curators, always ready to
+                help. Every question received a comprehensive answer, all
+                homework was checked and discussed. The streams were fun and
+                very informative. I I'm glad and grateful for the opportunity to
+                be part of such a community and to learn and work in such a
+                wonderful atmosphere. A huge thank you to everyone who took part
+                in this process!
+              </div>
+            </div>
+          </div>
+          <div class="reviews__inner">
+            <h3 class="reviews__name">Olivia</h3>
+            <div class="reviews__card">
+              <img src="./img/reviews/3.png" alt="" />
+              <div>
+                I am completely satisfied with the training! All aspects of the
+                program are at a high level: the quality of the information
+                provided, support from mentors and curators, always ready to
+                help. Every question received a comprehensive answer, all
+                homework was checked and discussed. The streams were fun and
+                very informative. I I'm glad and grateful for the opportunity to
+                be part of such a community and to learn and work in such a
+                wonderful atmosphere. A huge thank you to everyone who took part
+                in this process!
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <p>Conditions of Use</p>
+              <p>Privacy Notice</p>
+            </div>
+            <div class="footer__copyright">
+              <p>© 2023- 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

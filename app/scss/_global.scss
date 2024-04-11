@@ -9,7 +9,7 @@ span {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100vh;
 }
 
@@ -20,4 +20,8 @@ body {
 .container {
   max-width: 1550px;
   margin: 0 auto;
+}
+
+button {
+  font-family: "Inter", sans-serif;
 }

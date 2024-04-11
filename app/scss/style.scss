@@ -3,6 +3,7 @@
 .main__info {
   padding-top: 209px;
   position: relative;
+
   h1 {
     font-size: 103px;
     font-weight: 700;
@@ -49,10 +50,10 @@
 .main__img {
   .img-laptop {
     position: absolute;
-    right: 0;
-    top: 140px;
-    width: 1164px;
-    height: 776px;
+    right: 70px;
+    top: 120px;
+    width: 964px;
+    height: 700px;
   }
   .main__ellipse-1 {
     position: absolute;
@@ -62,6 +63,23 @@
   }
 }
 
+.main__bg-content {
+  // .main__bg-bit {
+  //   position: absolute;
+  //   right: 120px;
+  //   top: 970px;
+  //   width: 170px;
+  //   height: 170px;
+  // }
+  // .main__bg-lite {
+  //   position: absolute;
+  //   left: 1020px;
+  //   top: 700px;
+  //   width: 170px;
+  //   height: 170px;
+  // }
+}
+
 .main__list {
   display: flex;
   justify-content: space-between;
@@ -69,115 +87,531 @@
   gap: 39px;
   .main__card {
     text-align: center;
-
+    margin-top: 100px;
     box-shadow: 0px 0px 20px 2px #ac6aff;
     border-radius: 43px;
-    width: 390px;
+    width: 300px;
+    height: 150px;
     img {
-      margin-top: 18px;
+      margin-top: 10px;
+      width: 80px;
+      height: 80px;
     }
     p {
-      font-size: 30px;
-      padding-bottom: 23px;
+      margin-top: 10px;
+      font-size: 20px;
     }
   }
 }
 
 .step__wrapper {
+  height: 1700px;
   position: relative;
+  margin-top: 100px;
+  .step__bg-content {
+    .step__bg-binance {
+      position: absolute;
+      right: 200px;
+      top: 180px;
+      width: 200px;
+      height: 200px;
+    }
+    .step__bg-doge {
+      position: absolute;
+      left: 200px;
+      bottom: 500px;
+      width: 270px;
+      height: 270px;
+    }
+    .step__bg-usdt {
+      position: absolute;
+      position: absolute;
+      right: 100px;
+      bottom: 150px;
+      width: 350px;
+      height: 350px;
+    }
+    .step__bg-s {
+      position: absolute;
+      position: absolute;
+      right: 0;
+      top: 700px;
+      width: 250px;
+      height: 250px;
+    }
+    .step__bg-ellipse-1 {
+      position: absolute;
+      right: -176px;
+      top: -100px;
+      width: 200px;
+      height: 700px;
+    }
+    .step__bg-ellipse-2 {
+      position: absolute;
+      left: -176px;
+      bottom: 300px;
+      width: 150px;
+      height: 800px;
+    }
+  }
   h2 {
-    margin-top: 130px;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
   }
   .step__card {
-    width: 616px;
-    height: 319px;
-    box-shadow: 0px 7px 20px 0px black;
+    width: 506px;
+    height: 219px;
+    box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.25));
     border-radius: 80px;
 
     h3 {
       padding-left: 50px;
       padding-top: 35px;
       color: #ac6aff;
-      font-size: 35px;
+      font-size: 22px;
     }
     p {
       margin-top: 15px;
       padding-left: 50px;
-      font-size: 26px;
+      font-size: 18px;
       font-weight: 500;
       max-width: 530px;
     }
     .step__card-subtitle {
-      font-size: 30px;
+      font-size: 18px;
     }
   }
 
   .card--1 {
     position: absolute;
-    left: 0;
+    left: 100px;
     top: 200px;
   }
   .card--2 {
     position: absolute;
-    right: 0;
-    top: 550px;
+    right: 100px;
+    top: 450px;
+    p {
+      max-width: 400px;
+    }
   }
   .card--3 {
     position: absolute;
-    left: 0;
-    top: 900px;
+    left: 100px;
+    top: 700px;
+    p {
+      max-width: 350px;
+    }
   }
   .card--4 {
     position: absolute;
-    right: 0;
-    top: 1250px;
+    right: 100px;
+    top: 950px;
+    p {
+      max-width: 400px;
+    }
   }
   .card--5 {
     position: absolute;
-    left: 0;
-    top: 1600px;
+    left: 100px;
+    top: 1200px;
+    p {
+      max-width: 400px;
+    }
   }
 
   .step__circle {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
     border-radius: 200%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ac6aff;
     color: #fff;
-    font-size: 60px;
+    font-size: 30px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
   .circle--1 {
     position: absolute;
-    top: 190px;
+    top: 200px;
   }
   .circle--2 {
     position: absolute;
-    top: 550px;
+    top: 450px;
   }
   .circle--3 {
-    top: 900px;
+    top: 700px;
   }
   .circle--4 {
-    top: 1250px;
+    top: 950px;
   }
   .circle--5 {
-    top: 1600px;
+    top: 1200px;
   }
   .step__line {
     z-index: -1;
     position: absolute;
     width: 5px;
-    height: 1280px;
+    height: 1000px;
     right: 772px;
-    top: 320px;
+    top: 280px;
     background-color: black;
+  }
+}
+
+.program__wrapper {
+  height: 1000px;
+  .program__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+  .program__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .program__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    width: 470px;
+    border-radius: 60px;
+    height: 700px;
+    background-color: #ac6aff;
+    position: relative;
+    .program__card-price {
+      padding: 18px 9px;
+      background-color: #fff;
+      position: absolute;
+      right: 100px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    h3 {
+      margin-top: 65px;
+      margin-left: 30px;
+      font-size: 40px;
+
+      font-weight: 500;
+    }
+    .program__subtitle {
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .program__desc {
+      max-width: 376px;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .button__inner {
+      margin-bottom: 50px;
+      text-align: center;
+      p {
+        font-weight: 600;
+        font-size: 22px;
+      }
+      button {
+        cursor: pointer;
+        background: #ffffff;
+        border-radius: 80px;
+        border: none;
+        padding: 18px 10px;
+        color: #ac6aff;
+        font-weight: 800;
+        margin-top: 10px;
+        font-weight: 800;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .prog__card--1 {
+  }
+}
+
+.reviews {
+  margin-top: 50px;
+  height: 1500px;
+  .reviews__wrapper {
+    position: relative;
+    .reviews__bg-content {
+      .reviews__bg-ellipse-1 {
+        position: absolute;
+        right: -176px;
+        top: -500px;
+      }
+    }
+    .reviews__title {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .reviews__inner {
+      .reviews__name {
+        margin-left: 75px;
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+      .reviews__card {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+
+        img {
+          width: 260px;
+          height: 300px;
+        }
+        div {
+          width: 1040px;
+          background-color: #ac6aff;
+          height: 200px;
+
+          font-size: 22px;
+          color: #fff;
+          padding: 20px 20px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding-block: 100px;
+  background-color: #ac6aff;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  .footer__wrapper {
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer__info {
+      display: flex;
+      gap: 67px;
+    }
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.popup--active {
+  display: flex;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  background-color: #fff;
+  max-width: 800px;
+  position: relative;
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+  }
+  &__block {
+    span {
+      padding-top: 40px;
+      font-size: 25px;
+    }
+  }
+}
+
+.poppup__input-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .main__wrapper {
+    height: 550px;
+  }
+  .main__info {
+    padding-top: 100px;
+    text-align: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      max-width: 160px;
+      margin: 0 auto;
+
+      .main__first-btn {
+        padding: 15px 15px;
+        font-size: 13px;
+        margin-top: 50px;
+      }
+      .main__second-btn {
+        padding: 15px 15px;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+    }
+    .main__subtitle {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+      max-width: 270px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .main__img {
+    display: none;
+  }
+  .main__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    .main__card {
+      width: 125px;
+      height: 75px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 20px 0.1px rgba(#ac6aff, 0.35);
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      p {
+        font-size: 15px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .step__bg-content {
+    display: none;
+  }
+
+  .step__wrapper {
+    height: 1100px;
+
+    h2 {
+      font-size: 15px;
+    }
+
+    .step__circle-block {
+      display: none;
+    }
+
+    .step__block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .step__card {
+      position: unset;
+      width: 350px;
+      height: 150px;
+      padding-bottom: 35px;
+      h3 {
+        font-size: 15px;
+      }
+      .step__card-subtitle {
+        font-size: 13px;
+      }
+      span {
+        font-size: 13px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .program__wrapper {
+    height: 2200px;
+    .program__title {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    .program__inner {
+      display: flex;
+      flex-direction: column;
+    }
+    .program__card {
+      height: 600px;
+      width: 320px;
+      margin: 0 auto;
+      margin-top: 50px;
+      .program__card-price {
+        position: absolute;
+        right: 60px;
+        padding: 7px 7px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      div {
+        .program__subtitle {
+          font-size: 14px;
+        }
+        .program__desc {
+          font-size: 14px;
+          width: 220px;
+        }
+      }
+      .button__inner {
+        text-align: m0-a p {
+          font-size: 14px;
+        }
+        button {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .reviews__wrapper {
+    .reviews__name {
+      font-size: 12px;
+    }
+    .reviews__card {
+      img {
+        display: none;
+      }
+    }
   }
 }
