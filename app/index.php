@@ -45,20 +45,21 @@
         <h3 class="popup__title">Do you need <span>consultation</span>?</h3>
         <div class="popup__block">
           <div class="poppup__input-inner">
-            <div>
-              <input class="popup__input" placeholder="Name" type="text" />
-              <input class="popup__input" placeholder="E-mail" type="text" />
-              <input class="popup__input" placeholder="Number" type="text" />
-            </div>
+            <form action='send.php' method='post'>
+  
+              <input class="popup__input" placeholder="Name" type="text" name='name' required />
+              <input class="popup__input" placeholder="E-mail" type="text" name='email' required />
+              <input class="popup__input" placeholder="Number" type="text" name='tel' required />
+              <button type='submit' value='Отправить данные' class="popup__btn">Continue</button>
+            </form>
             <img src="./img/popup/consult.png" alt="" class="popup__img" />
           </div>
           <div class="popup__price">
-            <button class="popup__btn">Continue</button>
           </div>
         </div>
       </div>
     </div>
-
+ 
     <div class="container">
       <section class="main">
         <div class="main__wrapper">
