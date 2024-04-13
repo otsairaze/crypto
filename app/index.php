@@ -18,7 +18,7 @@
   </head>
   <body>
     <div id="over" class="overlay">
-      <div class="popup">
+      <div id="popupProgram" class="popup">
         <h3 class="popup__title">
           Have you <span>decided</span> on your study program?
         </h3>
@@ -40,23 +40,43 @@
         </div>
       </div>
     </div>
+    <div id="consultOver" class="overlay">
+      <div id="popupConsult" class="popup__consult">
+        <h3 class="popup__title">Do you need <span>consultation</span>?</h3>
+        <div class="popup__block">
+          <div class="poppup__input-inner">
+            <div>
+              <input class="popup__input" placeholder="Name" type="text" />
+              <input class="popup__input" placeholder="E-mail" type="text" />
+              <input class="popup__input" placeholder="Number" type="text" />
+            </div>
+            <img src="./img/popup/consult.png" alt="" class="popup__img" />
+          </div>
+          <div class="popup__price">
+            <button class="popup__btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <section class="main">
         <div class="main__wrapper">
           <div class="main__info">
-            <h1>Vitalii-Trade</h1>
+            <h1>
+              Innovative<br />
+              personal
+            </h1>
             <p class="main__subtitle">
               Trading, courses, information materials
             </p>
-            <p>
+            <p class="main__text">
               Get <span>unique</span> skills, <span>valuable</span> experience,
               ready-made tools and our continuous support - start the path to
               successful work in the financial markets while still studying.
             </p>
             <div>
-              <button id="btn" class="main__first-btn">
-                Online consultation
-              </button>
+              <button class="main__first-btn">Online consultation</button>
               <button class="main__second-btn">Book your place</button>
             </div>
           </div>
@@ -91,7 +111,6 @@
       <section class="step">
         <div class="step__wrapper">
           <div class="step__bg-content">
-            s
             <img class="step__bg-binance" src="./img/bg/binance.png" alt="" />
             <img class="step__bg-s" src="./img/bg/s.png" alt="" />
             <img class="step__bg-doge" src="./img/bg/doge.png" alt="" />
@@ -321,8 +340,19 @@
         <div class="container">
           <div class="footer__inner">
             <div class="footer__info">
-              <p>Conditions of Use</p>
-              <p>Privacy Notice</p>
+              <a href=""><p>About us</p></a>
+              <a href=""> <p>Term of Service</p></a>
+              <a href=""> <p>Privacy Policy</p></a>
+            </div>
+            <div class="footer__info">
+              <p>+44 7537 171933</p>
+              <p>vitaliitabachok@outlook.com</p>
+              <a
+                href="
+              "
+              >
+                <p>@InvestiGenius</p></a
+              >
             </div>
             <div class="footer__copyright">
               <p>© 2023- 2024</p>

@@ -7,9 +7,10 @@ const uglify = require("gulp-uglify-es").default;
 
 function browsersync() {
   browserSync.init({
-    server: {
-      baseDir: "app/",
-    },
+    // server: {
+    //   baseDir: "app/",
+    // },
+    proxy: "Crypto",
   });
 }
 
@@ -41,6 +42,7 @@ function watching() {
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/js/**/*js", "!app/js/main.min.js"], scripts);
   watch(["app/*.html"]).on("change", browserSync.reload);
+  watch(["app/**/*.php"]).on("change", browserSync.reload);
 }
 
 exports.styles = styles;
