@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +37,7 @@
             <img src="./img/popup/payment.png" alt="" class="popup__img" />
           </div>
           <div class="popup__price">
-            <p>Total to Pay:</p>
+            <p>Total to Pay:<span class='popup__total'></span></p>
             <button class="popup__btn">Continue</button>
           </div>
         </div>
@@ -45,10 +48,9 @@
         <h3 class="popup__title">Do you need <span>consultation</span>?</h3>
         <div class="popup__block">
           <div class="poppup__input-inner">
-            <form action='send.php' method='post'>
-  
-              <input class="popup__input" placeholder="Name" type="text" name='name' required />
-              <input class="popup__input" placeholder="E-mail" type="text" name='email' required />
+            <form action='sendmail.php' method='POST'>
+              <input class="popup__input" placeholder="Name" type="text" name='message' required />
+              <input class="popup__input" placeholder="E-mail" type="email" name='email' required />
               <input class="popup__input" placeholder="Number" type="text" name='tel' required />
               <button type='submit' value='Отправить данные' class="popup__btn">Continue</button>
             </form>
@@ -59,13 +61,34 @@
         </div>
       </div>
     </div>
- 
+    <div id="training" class="overlay">
+      <div id="popupTraining" class="popup__training">
+        <p class='popup__text'>
+          Module 0: Introduction to the exchange, software and its setup<br>
+          Module 1: Understanding market structure (sideways movement, trends) within the framework of BOS/SMS.<br>
+          Module 2: Liquidity Analysis via SWEEP.<br>
+          Module 3: Application of working with Imbalance.<br>
+          Module 4: Using Fibonacci methods (Fibo adjustment, OTE).<br>
+          Module 5: Mastering the terminology STB/BTS, OB, WICK, BB, MB.<br>
+          Module 6: Understanding Multi-Market Structures.<br>
+          Module 7: Learning
+          Order Flow and Its Application.
+          Module 8: Trading within the framework of ROI (Return on Investment) using all instruments.<br>
+          Module 9: Introduction to the PO3 Method.<br>
+          Module 10: Trading Psychology, Risk Management and the Risk-Return Relationship.<br>
+          Module 11: Using the Wyckoff Method to Range the Market.<br>
+          Module 12: Exploring various trading setups.<br>
+          Trading journal to track results.
+          1 month of free access to the closed INTRADAY community. 12 streams with question and answer sessions to reinforce the material learned.<br>
+
+
+      </div>
+    </div>
     <div class="container">
       <section class="main">
         <div class="main__wrapper">
           <div class="main__info">
-            <h1>
-              Innovative<br />
+            <h1>Innovative<br>
               personal
             </h1>
             <p class="main__subtitle">
@@ -145,8 +168,8 @@
                 <span>Answer</span> the <span>following</span> questions:
               </p>
               <p>
-                1. What <span>motivates</span> me to start trading?<br />
-                2. What <span>expectations</span> do I have from trading?<br />
+                1. What <span>motivates</span> me to start trading?<br>
+                2. What <span>expectations</span> do I have from trading?<br>
                 3. Are my trading expectations <span>realistic?</span>
               </p>
             </div>
@@ -199,34 +222,35 @@
           <div class="program__inner">
             <div class="program__card prog__card--1">
               <div class="program__card-price">
-                <span>200$</span>
+                <span class='program__money'>200$</span>
               </div>
               <div>
-                <h3>EXPERT</h3>
+                <h3 class='program__name'>EXPERT</h3>
                 <p class="program__subtitle">12 modules 4 weeks</p>
                 <p class="program__desc">
                   Upon completion of the program, the student will acquire the
-                  following skills:<br />
+                  following skills:<br>
                   1. Creating your own trading strategy, based on the experience
-                  of mentors for 3 years.<br />
+                  of mentors for 3 years.<br>
                   2. Development of an approach to trading as an intraday trader
                   (trading in the middle of the day) and in positions that
                   require less time for analytics, which helps to increase
-                  trading efficiency.<br />
+                  trading efficiency.<br>
                   3. Course pdf + mentoring
                 </p>
               </div>
               <div class="button__inner">
-                <p>TRAINING PROGRAM</p>
+
+                <p class='program__training'>TRAINING PROGRAM</p>
                 <button id="btn">SUBMIT YOUR APLICATION</button>
               </div>
             </div>
             <div class="program__card prog__card--2">
               <div class="program__card-price">
-                <span>500$</span>
+                <span class='program__money'>500$</span>
               </div>
               <div>
-                <h3>PRO</h3>
+                <h3 class='program__name'>PRO</h3>
                 <p class="program__subtitle">19 modules 8 weeks</p>
                 <p class="program__desc">
                   Upon completion of the program, the student will acquire the
@@ -242,30 +266,30 @@
               </div>
 
               <div class="button__inner">
-                <p>TRAINING PROGRAM</p>
+                <p class='program__training'>TRAINING PROGRAM</p>
                 <button id="btn">SUBMIT YOUR APLICATION</button>
               </div>
             </div>
             <div class="program__card prog__card--3">
               <div class="program__card-price">
-                <span>800$</span>
+                <span class='program__money'>800$</span>
               </div>
               <div>
-                <h3>INDIVIDUAL</h3>
+                <h3 class='program__name'>INDIVIDUAL</h3>
                 <p class="program__subtitle">
                   19 training modules Duration 8 weeks Additional 4 weeks of
                   support from a mentor
                 </p>
                 <p class="program__desc">
-                  Program results include:<br />
+                  Program results include:<br>
                   1. A comprehensive set of knowledge and tools necessary for
-                  successful trading<br />
-                  2. Acquiring skills and competencies to become a trader<br />
+                  successful trading<br>
+                  2. Acquiring skills and competencies to become a trader<br>
                   3. Course pdf + mentoring
                 </p>
               </div>
               <div class="button__inner">
-                <p>TRAINING PROGRAM</p>
+                <p class='program__training'>TRAINING PROGRAM</p>
                 <button id="btn">SUBMIT YOUR APLICATION</button>
               </div>
             </div>
