@@ -11,10 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^3.0.2",
+    "del": "6.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
+    "imagemin": "^8.0.1",
     "sass": "^1.69.5"
   }
 }

@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="./css/style.min.css" />
     <script src="./js/main.min.js" defer></script>
-    <title>Crypto</title>
+    <title>Innovative Personal</title>
   </head>
   <body>
     <div id="over" class="overlay">
@@ -38,7 +38,9 @@
           </div>
           <div class="popup__price">
             <p>Total to Pay:<span class='popup__total'></span></p>
+            
             <button class="popup__btn">Continue</button>
+            
           </div>
         </div>
       </div>
